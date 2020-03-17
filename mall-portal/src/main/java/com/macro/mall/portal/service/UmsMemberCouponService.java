@@ -2,7 +2,6 @@ package com.macro.mall.portal.service;
 
 import com.macro.mall.model.SmsCouponHistory;
 import com.macro.mall.portal.domain.CartPromotionItem;
-import com.macro.mall.portal.domain.CommonResult;
 import com.macro.mall.portal.domain.SmsCouponHistoryDetail;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -17,7 +16,7 @@ public interface UmsMemberCouponService {
      * 会员添加优惠券
      */
     @Transactional
-    CommonResult add(Long couponId);
+    void add(Long couponId);
 
     /**
      * 获取优惠券列表

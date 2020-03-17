@@ -1,10 +1,5 @@
 server:
-  port: 8443 #开发环境会开启https
-  ssl:
-    key-store: keystore.p12
-    key-alias: tomcat
-    key-store-password: 123456
-    key-store-type: PKCS12
+  port: 8085
 
 spring:
   datasource:
@@ -38,7 +33,7 @@ spring:
         max-wait: -1ms # 连接池最大阻塞等待时间（使用负值表示没有限制）
         max-idle: 8 # 连接池中的最大空闲连接
         min-idle: 0 # 连接池中的最小空闲连接
-    timeout: 0ms # 连接超时时间（毫秒）
+    timeout: 3000ms # 连接超时时间（毫秒）
 
   rabbitmq:
     host: localhost
